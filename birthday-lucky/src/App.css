@@ -90,7 +90,7 @@
 
 .birthDayForm .error-p {
   color: white;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-size:1.2rem;
   text-align: center;
 }
