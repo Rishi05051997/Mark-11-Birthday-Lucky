@@ -1,0 +1,157 @@
+.container {
+  margin: 0 500px;
+  background-image: url('./images/birthday.jpeg');
+  height: 1500px;
+}
+
+.isBirthDay {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 97%);
+  transition: 0.3s;
+  width: 80%;
+  position: relative;
+  top: 15rem;
+  padding: 0.7rem;
+  margin: 0 auto;
+  background-color: #778899a8;
+  border-radius: 20px;
+}
+.isBirthDay h2 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.isBirthDay:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.birthDayForm {
+  position: relative;
+  top: 30rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 97%);
+  transition: 0.3s;
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0 auto;
+  background-color: #778899a8;
+  border-radius: 20px;
+}
+
+.birthDayForm h1 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.birthDayForm .mainForm {
+  margin: 0;
+}
+.birthDayForm .mainForm .input-field {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+.birthDayForm .mainForm .input-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.birthDayForm .mainForm .input-btn button {
+  margin: 0;
+  padding: 0.6rem;
+  border-radius: 40px;
+  color: black;
+  font-family: cursive;
+  font-size:1.2rem;
+
+}
+
+.birthDayForm .mainForm .input-btn button:hover{
+  background-color: rgba(37, 160, 182, 0.788);
+}
+
+
+.birthDayForm .mainForm .input-field input {
+  color: black;
+  padding: 0.7rem;
+  max-width: 70%;
+  margin: 0 2rem;
+  border-radius: 10px;
+}
+
+.birthDayForm .mainForm .input-field label {
+  text-align: center;
+  margin: 0 0 0.7rem 0;
+  color: #ffff;
+  font-size: 1.4rem;
+}
+
+.birthDayForm .error-p {
+  color: white;
+  font-family: cursive;
+  font-size:1.2rem;
+  text-align: center;
+}
+
+.footer {
+  position: relative;
+  top: 40rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 97%);
+  transition: 0.3s;
+  width: 80%;
+  padding: 0.7rem;
+  margin: 0 auto;
+  background-color: #778899a8;
+  border-radius: 20px;
+  
+}
+
+.footer ul {
+  display: flex;
+  margin: 1rem 2rem;
+  padding-inline-start: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0;
+}
+.footer ul li {
+  margin: 1rem 2rem;
+  list-style-type: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer ul li a:hover{
+  color: white;
+}
+
+.footer p {
+  text-align: center;
+  margin-block-start: 0;
+}
+
+@media (max-Width:768px) {
+  .container {
+    margin: 0 20px;
+    background-image: url("./images/birthday.jpeg");
+    height: 1700px;
+  }
+  .footer ul {
+    margin: 1rem 1rem;
+  }
+  .footer ul li {
+    margin: 1rem 0.5rem;
+  }
+  .footer ul li a:hover{
+    color: white;
+  }
+  .footer p {
+    font-size: 0.7rem;
+  }
+  
+}
+
+
