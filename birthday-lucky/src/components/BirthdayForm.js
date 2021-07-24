@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import LUCKY from './../images/lucky.png'
+import UNLUCKY from './../images/unlucky.png'
 
 export default function BirthdayForm() {
     const [birthDate, setBirthDate] = useState('');
@@ -6,6 +8,12 @@ export default function BirthdayForm() {
     const [lessZero, setLessZero] = useState(false)
     const [lucky, setLucky] = useState(false);
     const [unLucky, setUnLucky] = useState(false);
+    const [closedIconBox, setCLosedIconBox] = useState(false);
+   
+    const closedIcon = () => {
+        setCLosedIconBox(true)
+    }
+
     
     const onFormSubmit = (e) => {
         e.preventDefault();
@@ -35,9 +43,13 @@ export default function BirthdayForm() {
         <div>
             <div className="isBirthDay">
                 <h2>Is Your Birthday is Lucky ?</h2>
-                <h2>👇</h2>
+                <h2><a href="#birthForm">👇</a></h2>
             </div>
-            <div className="birthDayForm">
+            <div className="birthDayForm" id="birthForm">
+                <div className={closedIconBox?"closedIconBox":"alertBox"}>
+                    <h4 onClick={closedIcon} className="closed-icon">x</h4>
+                    <p><strong>Privacy Notice!</strong> We are not storing your data.</p>
+                </div>
                 <h1>Enter Your Birthdate and lucky number to continue...🎂🎂🎂</h1>
                 <div className="mainForm">
                     <form onSubmit={onFormSubmit}>
@@ -58,10 +70,18 @@ export default function BirthdayForm() {
                     lessZero && <p className="error-p">Value should be greater than zero.</p>
                 }
                 {
-                    lucky && <p className="error-p">Congratulations!, Your birthday is a lucky number!!.</p>
+                    lucky && 
+                    <div className="error-div">
+                        <p className="error-p">Congratulations!, Your birthday is a lucky number!!.</p>
+                        < img src={LUCKY} alt="" />
+                    </div>
                 }
                 {
-                    unLucky && <p className="error-p">Oops!! Your birthday is not a lucky number!</p>
+                    unLucky && 
+                    <div className="error-div">
+                        <p className="error-p">Oops!! Your birthday is not a lucky number!</p>
+                        < img src={UNLUCKY} alt="" />
+                    </div>
                 }
             </div>
             <div className="footer">

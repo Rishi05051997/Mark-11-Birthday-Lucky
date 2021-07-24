@@ -1,9 +1,9 @@
 .container {
   margin: 0 500px;
   background-image: url('./images/birthday.jpeg');
-  height: 1500px;
+  height: 1800px;
 }
-
+/* BirthDay Header started here */
 .isBirthDay {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 97%);
   transition: 0.3s;
@@ -15,20 +15,27 @@
   background-color: #778899a8;
   border-radius: 20px;
 }
+
 .isBirthDay h2 {
   color: white;
   font-family: cursive;
   text-align: center;
   font-size: 1.8rem;
+  cursor: pointer;
+}
+.isBirthDay h2 a {
+  text-decoration: none;
 }
 
 .isBirthDay:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
+/* Brithday Main Form started here  */
 .birthDayForm {
   position: relative;
-  top: 30rem;
+  top: 35rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 97%);
   transition: 0.3s;
   width: 80%;
@@ -37,6 +44,33 @@
   background-color: #778899a8;
   border-radius: 20px;
 }
+/* birthday from alert box started here */
+.birthDayForm .alertBox {
+  box-shadow: 0 4px 8px 0 rgb(42 28 36 / 69%);
+  width: 80%;
+  background-color: #ad68ec;
+  margin: 0 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.birthDayForm .alertBox .closed-icon {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  position: relative;
+  left: 320px;
+  font-size: 1.4rem;
+  cursor: pointer;
+ }
+.birthDayForm .alertBox p {
+  font-size: 0.9rem;
+}
+.birthDayForm .closedIconBox {
+  display: none;
+}
+
 
 .birthDayForm h1 {
   color: white;
@@ -87,13 +121,22 @@
   color: #ffff;
   font-size: 1.4rem;
 }
+/* lucky amd unlucky message start here */
+.birthDayForm .error-div {
+  margin: 0;
+}
+.birthDayForm .error-div img {
+  height: 100px;
+  margin: 0 9rem;
+}
 
-.birthDayForm .error-p {
+.birthDayForm .error-div .error-p {
   color: white;
   /* font-family: cursive; */
   font-size:1.2rem;
   text-align: center;
 }
+
 
 .footer {
   position: relative;
@@ -138,6 +181,26 @@
     margin: 0 20px;
     background-image: url("./images/birthday.jpeg");
     height: 1700px;
+  }
+  .birthDayForm .alertBox {
+    margin: 0 10px;
+  }
+  .birthDayForm .alertBox p{
+    font-size: 9px;
+  }
+  .birthDayForm .alertBox .closed-icon{
+    position: relative;
+    left: 200px;
+    font-size: 15px;
+  }
+  .birthDayForm h1 {
+    font-size: 1rem;
+  }
+  .birthDayForm .mainForm .input-field label {
+    font-size: 0.9rem;
+  }
+  .birthDayForm .error-div img {
+    margin: 0 3.6rem;
   }
   .footer ul {
     margin: 1rem 1rem;
